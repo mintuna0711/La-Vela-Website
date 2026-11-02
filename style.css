@@ -186,6 +186,87 @@
     .decor-card small { color: var(--muted); font-size: 10px; }
     .decor-disclaimer { margin-top: 14px; color: var(--muted); font-size: 10px; }
 
+/* Chọn số lượng decor cho từng bánh */
+.decor-selection-group {
+  margin-top: 24px;
+}
+
+.decor-selection-hint {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #a9a09a;
+  margin: 8px 0 16px;
+}
+
+.decor-quantity-list {
+  display: grid;
+  gap: 10px;
+}
+
+.decor-quantity-row {
+  display: grid;
+  grid-template-columns: 36px 1fr 72px;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid rgba(201, 164, 108, 0.25);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.decor-quantity-icon {
+  font-size: 22px;
+  text-align: center;
+}
+
+.decor-quantity-row label {
+  font-size: 14px;
+  color: #f5eee4;
+}
+
+.decor-quantity-row input {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid rgba(201, 164, 108, 0.4);
+  border-radius: 5px;
+  background: #171513;
+  color: #fff;
+  text-align: center;
+}
+
+.decor-count-summary {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  background: rgba(201, 164, 108, 0.1);
+  color: #e6c998;
+}
+
+.decor-count-summary.is-valid {
+  color: #b8e3bd;
+  background: rgba(80, 160, 90, 0.12);
+}
+
+.decor-count-summary.is-invalid {
+  color: #ffb6a8;
+  background: rgba(200, 70, 50, 0.12);
+}
+
+@media (max-width: 480px) {
+  .decor-quantity-row {
+    grid-template-columns: 28px 1fr 58px;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .decor-quantity-row label {
+    font-size: 12px;
+  }
+}
+
     /* Order */
     .order { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0,.78fr) minmax(0,1.05fr); align-items: start; gap: 9%; }
     .order-intro h2 { margin: 23px 0; }

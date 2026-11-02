@@ -86,7 +86,7 @@
 
     <section class="story section-shell section-space" id="story">
       <div class="story-image-wrap">
-        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=85" alt="Bánh ngọt được trang trí tinh tế" loading="lazy">
+        <img src="set41.jpg" alt="Bánh ngọt được trang trí tinh tế" loading="lazy">
         <span class="image-corner-label">A LITTLE GIFT, A LASTING MEMORY</span>
         <span class="image-sparkle" aria-hidden="true">✧</span>
       </div>
@@ -114,7 +114,7 @@
         <div class="product-grid">
           <article class="product-card">
             <div class="product-photo">
-              <img src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&w=900&q=85" alt="Bánh ngọt trong bộ quà tặng nhỏ" loading="lazy">
+              <img src="set4.jpg" alt="Bánh ngọt trong bộ quà tặng nhỏ" loading="lazy">
               <span class="product-index">01</span><span class="product-ribbon">THE LITTLE GIFT</span>
             </div>
             <div class="product-body">
@@ -130,7 +130,7 @@
           </article>
           <article class="product-card">
             <div class="product-photo">
-              <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85" alt="Bánh ngọt cho hộp quà mùa lễ hội" loading="lazy">
+              <img src="set6.jpg" alt="Bánh ngọt cho hộp quà mùa lễ hội" loading="lazy">
               <span class="product-index">02</span><span class="product-ribbon">THE SIGNATURE GIFT</span>
             </div>
             <div class="product-body">
@@ -188,10 +188,57 @@
           <div class="form-group"><label for="setType">Chọn set bánh <b>*</b></label><select id="setType" name="setType" required><option value="4">Christmas Set 04 — 229.000đ</option><option value="6">Christmas Set 06 — 329.000đ</option></select></div>
           <div class="form-group"><label for="quantity">Số lượng hộp <b>*</b></label><input type="number" id="quantity" name="quantity" min="1" max="15" value="1" required></div>
         </div>
-        <div class="form-group"><label for="decorType">Phong cách decor <b>*</b></label><select id="decorType" name="decorType" required>
-          <option value="">Chọn kiểu trang trí</option>
-          <option value="Cây thông Noel">Cây thông Noel</option><option value="Tuần lộc">Tuần lộc</option><option value="Santa">Santa</option><option value="Hộp quà">Hộp quà</option><option value="Người tuyết">Người tuyết</option><option value="Bông tuyết">Bông tuyết</option><option value="Decor theo yêu cầu">Decor theo yêu cầu khác</option>
-        </select></div>
+       
+<div class="form-group decor-selection-group">
+  <label>Chọn số lượng decor cho từng bánh <b>*</b></label>
+  <p class="decor-selection-hint">
+    Nhập số bánh theo từng kiểu trang trí. Tổng số decor cần khớp với số bánh trong set.
+  </p>
+
+  <div class="decor-quantity-list" id="decorQuantityList">
+    <div class="decor-quantity-row">
+      <span class="decor-quantity-icon">🎄</span>
+      <label for="decorTree">Cây thông Noel</label>
+      <input type="number" id="decorTree" name="decorTree" min="0" value="0">
+    </div>
+
+    <div class="decor-quantity-row">
+      <span class="decor-quantity-icon">❄</span>
+      <label for="decorSnowflake">Bông tuyết</label>
+      <input type="number" id="decorSnowflake" name="decorSnowflake" min="0" value="0">
+    </div>
+
+    <div class="decor-quantity-row">
+      <span class="decor-quantity-icon">🦌</span>
+      <label for="decorReindeer">Tuần lộc</label>
+      <input type="number" id="decorReindeer" name="decorReindeer" min="0" value="0">
+    </div>
+
+    <div class="decor-quantity-row">
+      <span class="decor-quantity-icon">🎅</span>
+      <label for="decorSanta">Ông già Noel</label>
+      <input type="number" id="decorSanta" name="decorSanta" min="0" value="0">
+    </div>
+
+    <div class="decor-quantity-row">
+      <span class="decor-quantity-icon">🎁</span>
+      <label for="decorGift">Hộp quà</label>
+      <input type="number" id="decorGift" name="decorGift" min="0" value="0">
+    </div>
+
+    <div class="decor-quantity-row">
+      <span class="decor-quantity-icon">☃</span>
+      <label for="decorSnowman">Người tuyết</label>
+      <input type="number" id="decorSnowman" name="decorSnowman" min="0" value="0">
+    </div>
+  </div>
+
+  <div class="decor-count-summary" id="decorCountSummary">
+    Đã chọn 0/4 bánh
+  </div>
+
+  <input type="hidden" id="decorType" name="decorType" value="">
+</div>
         <div class="form-row">
           <div class="form-group"><label for="pickupDate">Ngày nhận bánh <b>*</b></label><input type="date" id="pickupDate" name="pickupDate" min="2026-12-01" max="2026-12-25" required></div>
           <div class="form-group"><label for="pickupTime">Giờ nhận bánh <b>*</b></label><select id="pickupTime" name="pickupTime" required><option value="">Chọn giờ nhận</option><option value="13:00">13:00</option><option value="14:00">14:00</option><option value="15:00">15:00</option><option value="16:00">16:00</option><option value="17:00">17:00</option><option value="18:00">18:00</option></select></div>
