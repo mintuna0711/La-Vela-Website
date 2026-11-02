@@ -344,3 +344,34 @@
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
     }
+    .footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.footer-address {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.6;
+  color: #b8b3a8;
+}
+
+.thank-you-page,
+.thankyou-page {
+  background-color: #14251d;
+  background-image:
+    linear-gradient(
+      rgba(10, 20, 15, 0.25),
+      rgba(10, 20, 15, 0.25)
+    ),
+    url("thankyou-bg.jpg");
+
+  background-size: 420px auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+

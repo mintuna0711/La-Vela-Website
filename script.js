@@ -32,8 +32,6 @@
     orderForm.addEventListener("submit", (event) => {
       event.preventDefault();
       if (!orderForm.reportValidity()) return;
-
-      // Đây là trang demo: không gửi dữ liệu ra ngoài hoặc lưu thông tin khách hàng.
       orderForm.closest(".order").style.display = "none";
       thankYou.classList.add("show");
       thankYou.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -46,3 +44,19 @@
     });
 
     updateTotal();
+
+const orderform = document.getElementById("orderForm");
+
+if (orderForm) {
+  orderForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Chỉ chuyển trang nếu các trường bắt buộc hợp lệ
+    if (!orderForm.checkValidity()) {
+      orderForm.reportValidity();
+      return;
+    }
+
+    window.location.href = "thank-you.html";
+  });
+}
